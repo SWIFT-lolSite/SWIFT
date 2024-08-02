@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <meta property="og:title" content="Celery | Gameplay Reimagined">
+    <meta property="og:description" content="Download The #1 Web Roblox Executor Today!">
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+</head>
+<body>
+    <script>
+        $(function() {
+            // Initialize terminal
+            $('body').terminal({
+
+                '!SWIFT': function() {
+                    this.echo('Available commands:\n- help: Displays this list of commands\n- discord: Opens our Discord invite link\n- download: downloads the latest celeryapp');
+                },
+                
+
+                discord: function() {
+                    window.open('https://discord.gg/celery', '_self');
+                },
+                
+  
+                Games: function() {
+                    this.echo('-Assassin!(Fetures  )\n-More Games Soon!');
+                }
+
+              
+            }, {
+                greetings: 'SWIFT.LOL Console (run !SWIFT to get started)'
+            });
+        });
+    </script>
+</body>
+</html>
