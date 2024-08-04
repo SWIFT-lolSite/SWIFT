@@ -12,32 +12,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-
-   
     <script>
         $(function() {
+
+			
+					
             // Initialize terminal
-            $('body').terminal({
+     var TWIST = $('body').terminal({
+// FUNCTIONS START
 
-                '!SWIFT': function() {
-                    this.echo('Available commands:\n- discord: Opens our Discord invite link\n- Games: Shows all the games avalible right now');
-                },
+
+
                 
 
-                discord: function() {
-                    window.open('https://discord.gg/VnerSZksQN', '_new');
-                },
-                
-  
-                Games: function() {
-                    this.echo('-Assassin!(Fetures|https://swift-lolsite.github.io/Assassin.html)\n-More Games Soon!');
-                }
 
-              
+			 Okay: function() {
+					 window.open('https://swift-lolsite.github.io', '_self');
+			 },
+				Ok: function() {
+						window.open('https://swift-lolsite.github.io', '_self');
+				},
+
+									
+
+							
+
+
+              // FUNCTIONS END
             }, {
-                greetings: 'SWIFT.LOL Console (run !SWIFT to get started)'
-            });
+							// STARTED STUFF
+         //   greetings: 'SWIFT.LOL Console (run !SWIFT to get started)',
+				greetings: '-Silent Aim\n-Player ESP\n-Target ESP\n-INF Jump\n-FOV Changer\n-WalkSpeed Changer\n-Autofarm\n-SpinBot\n-Ghost Coin Collect\n-MORE FETURES ARE COMMING SOON!\n-Use"Okay" or "Ok" to Go Back to the Menu'
+							// SARTED STUFF END
+            },								 
+																	 );
+					
         });
+			
     </script>
 </body>
 </html>
