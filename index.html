@@ -20,7 +20,7 @@
             $('body').terminal({
 
                 '!SWIFT': function() {
-                    this.echo('Available commands:\n- discord: Opens our Discord invite link\n- Games: Shows all the games avalible right now');
+                    this.echo('Available commands:\n- discord: Opens our Discord invite link\n- games: Shows all the games avalible right now');
                 },
                 
 
@@ -29,7 +29,16 @@
                 },
                 
   
-                Games: function() {
+                games: function() {
+                    this.echo('-Assassin!(Fetures|https://swift-lolsite.github.io/Assassin.html)\n-More Games Soon!');
+                },
+
+                'Discord': function() {
+                    window.open('https://discord.gg/VnerSZksQN', '_new');
+                },
+                
+  
+                'Games': function() {
                     this.echo('-Assassin!(Fetures|https://swift-lolsite.github.io/Assassin.html)\n-More Games Soon!');
                 }
 
